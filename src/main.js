@@ -1,7 +1,9 @@
+const listingElement = document.querySelector('#listing');
 const response = getProductList();
 
-const productsHtml = response.product.map((product) =>{
-	return rednerProduct(product);
-});
+response.products
+	.map(renderProduct)
+	.forEach((productHtml) => {
+		listingElement.innerHTML += productHtml;
+	});
 
-console.log(productsHtml)

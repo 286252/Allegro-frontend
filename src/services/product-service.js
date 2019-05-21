@@ -1,11 +1,12 @@
-{
+function getProductList(){
+return{
     "products": [
       {
         "id": "product-id-1",
         "name": "Krzesło",
         "price": {
           "amount": "45.99",
-          "currency": "PLN"
+          "currency": "USD"
         },
         "description": {
           "text": "Bardzo wygodne krzesło"
@@ -19,7 +20,7 @@
         "name": "Notatnik",
         "price": {
           "amount": "9.00",
-          "currency": "PLN"
+          "currency": "EUR"
         },
         "description": {
           "text": "Notatnik w którym można pisać ołówkiem. Długopisem też."
@@ -72,3 +73,4 @@
       }
     ]
   };
+};
