@@ -1,4 +1,26 @@
-function getProductList(){
+function getProductList() {
+    const goodUrl = 'https://jsonplaceholder.typicode.com/todos/1';
+    const badUrl = 'https://jsonplaceholder.typicode.com/todos/1231312';
+
+
+    fetch(goofUrl)
+        .then(response => {
+            return response.json();
+        })
+        .then(response => {
+            console.log(response);
+        })
+        .catch(response => {
+              
+        })
+}
+
+function getProductListDeprecated() {
+
+
+}
+
+/*function getProductList(){
 return{
     "products": [
       {
@@ -74,3 +96,4 @@ return{
     ]
   };
 };
+*/
